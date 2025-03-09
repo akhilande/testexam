@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.timer-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.start {
+    background-color: green;
+    border-color: green;
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.stop {
+    background-color: red;
+    border-color: red;
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.reset {
+    background-color: grey;
+    border-color: grey;
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.timer-display {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.mode-controls {
+    margin-top: 20px;
+}
+
+.mode-controls button {
+    background-color: #2ecc71;
+}
+
+.mode-controls button:hover {
+    background-color: #27ae60;
+}
+
+@media (max-width: 600px) {
+    .timer-container {
+        width: 90%;
+    }
+
+    .timer-display {
+        font-size: 36px;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
